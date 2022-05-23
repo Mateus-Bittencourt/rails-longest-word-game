@@ -1,0 +1,10 @@
+<h1>Result</h1>
+
+<div class="content">
+  <p>Your word: <%= @word %></p>
+  <p>Time Taken to answer: <%= @result[:time].round %></p>
+  <p>Your score: <%= @result[:score] %></p>
+  <p>Message: <%= @result[:message] %></p>
+</div>
+
+<%= link_to 'Play again', new_path %>
